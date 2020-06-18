@@ -14,14 +14,14 @@
     "defaults"
   ],
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.1.0",
-    "autoprefixer": "^9.7.3",
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "autoprefixer": "^9.8.0",
     "eslint-plugin-svelte3": "^2.7.3",
     "parcel-bundler": "^1.12.4",
-    "parcel-plugin-svelte": "^4.0.5",
-    "prettier": "^2.0.2",
-    "prettier-plugin-svelte": "^0.7.0",
-    "svelte": "^3.16.7",
-    "tailwindcss": "^1.1.4"
+    "parcel-plugin-svelte": "^4.0.6",
+    "prettier": "^2.0.5",
+    "prettier-plugin-svelte": "^1.1.0",
+    "svelte": "^3.23.2",
+    "tailwindcss": "^1.4.6"
   }
 }
