@@ -7,14 +7,11 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "parcel src/index.html --port 3000",
-    "build": "rm -rf dist && parcel build src/index.html --no-source-maps"
+    "local": "parcel src/index.html --port 3000",
+    "public": "parcel src/index.html --port 3000 --host 192.168.0.5",
+    "build": "rm -rf dist && parcel build src/index.html --public-url ./"
   },
-  "browserslist": [
-    "defaults"
-  ],
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.3.0",
     "autoprefixer": "^9.8.0",
     "eslint-plugin-svelte3": "^2.7.3",
     "parcel-bundler": "^1.12.4",
@@ -22,6 +19,15 @@
     "prettier": "^2.0.5",
     "prettier-plugin-svelte": "^1.1.0",
     "svelte": "^3.23.2",
-    "tailwindcss": "^1.4.6"
-  }
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "@tailwindcss/typography": "^0.2.0",
+    "navaid": "^1.1.1",
+    "smoothscroll-polyfill": "^0.4.4",
+    "tailwindcss": "^1.5.2"
+  },
+  "browserslist": [
+    "defaults"
+  ]
 }
