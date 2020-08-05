@@ -1,10 +1,11 @@
 {
   "name": "svelte-starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Svelte Starter",
   "main": "./src/main.js",
   "author": "Jan Pistor",
   "license": "MIT",
+  "repository": "git@github.com:belafonte/svelte-starter.git",
   "private": false,
   "scripts": {
     "local": "parcel src/index.html --port 3000",
@@ -12,6 +13,7 @@
     "build": "rm -rf dist && parcel build src/index.html --public-url ./"
   },
   "devDependencies": {
+    "tailwindcss": "^1.5.2",
     "autoprefixer": "^9.8.0",
     "eslint-plugin-svelte3": "^2.7.3",
     "parcel-bundler": "^1.12.4",
@@ -20,11 +22,9 @@
     "svelte": "^3.23.2"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.10.4",
     "@tailwindcss/typography": "^0.2.0",
     "navaid": "^1.1.1",
-    "smoothscroll-polyfill": "^0.4.4",
-    "tailwindcss": "^1.5.2"
+    "smoothscroll-polyfill": "^0.4.4"
   },
   "browserslist": [
     "defaults"

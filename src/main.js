@@ -2,7 +2,7 @@ import App from './App.svelte';
 
 // setting up polyfills for smooth scroll and older browsers
 import smoothscroll from 'smoothscroll-polyfill';
-import '@babel/polyfill';
+import 'regenerator-runtime/runtime'
 
 smoothscroll.polyfill()
 
