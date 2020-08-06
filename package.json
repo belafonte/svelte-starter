@@ -8,8 +8,8 @@
   "repository": "git@github.com:belafonte/svelte-starter.git",
   "private": false,
   "scripts": {
-    "local": "parcel src/index.html --port 3000",
-    "public": "parcel src/index.html --port 3000 --host 192.168.0.5",
+    "local": "NODE_ENV=dev parcel src/index.html --port 3000",
+    "public": "NODE_ENV=dev parcel src/index.html --port 3000 --host 192.168.0.5",
     "build": "rm -rf dist && parcel build src/index.html --public-url ./"
   },
   "devDependencies": {
@@ -26,7 +26,12 @@
     "navaid": "^1.1.1",
     "smoothscroll-polyfill": "^0.4.4"
   },
-  "browserslist": [
-    "defaults"
-  ]
+  "browserslist": {
+    "production": [
+      "defaults"
+    ],
+    "dev": [
+      "last 1 chrome version"
+    ]
+  }
 }
